@@ -1,33 +1,57 @@
-# React + TypeScript + Vite
+Candidate Search App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 DescriptionThis project is a candidate search application that allows employers to browse candidate profiles, save potential hires, and skip candidates they are not interested in. The app fetches data from GitHub and displays it in a user-friendly format.
 
-Currently, two official plugins are available:
+Features
 
-* [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md), which uses [Babel](https://babeljs.io/) for Fast Refresh
-* [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc), which uses [SWC](https://swc.rs/) for Fast Refresh
+🔍 Search Candidates – Fetches candidate data from GitHub.
 
-## Expanding the ESLint configuration
+💾 Save Candidates – Stores selected candidates for later review.
 
-If you're developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+⏩ Skip Candidates – Moves to the next candidate.
 
-* Configure the top-level `parserOptions` property as follows:
+🔄 Persistent Storage – Saves candidate data locally.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Technologies Used
 
-* Replace `plugin:@typescript-eslint/recommended` with `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`.
-* Optionally, add `plugin:@typescript-eslint/stylistic-type-checked`.
-* Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` and `plugin:react/jsx-runtime` to the `extends` list.
+React (Vite)
 
----
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+TypeScript
+
+GitHub API
+
+Local Storage
+
+TailwindCSS (if applicable)
+
+Installation & Setup
+
+Clone the repository:
+
+git clone <repo-link>
+cd candidate-search-app
+npm install
+npm run dev
+
+Create a .env file in the environment folder:
+
+VITE_GITHUB_TOKEN=your_github_token_here
+
+Start the development server:
+
+npm run dev
+
+Known Issues
+
+Localhost is not currently working due to unresolved build errors.
+
+Render deployment is pending – project is not yet hosted online.
+
+Next Steps
+
+Fix the localhost issues and ensure full functionality.
+
+Deploy the app on Render.
+
+Improve styling and optimize the user experience.
+
